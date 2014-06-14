@@ -1,6 +1,11 @@
 # transform getLanguages into ordered array
 sortedLanguages = ->
-  _.sortBy _.values TAPi18n.getLanguages(), (language) -> language.code
+  langauges = TAPi18n.getLanguages()
+  # map language tag into the object
+  for key,val of langauges
+    langauges[key].tag = key
+  # return array sorted alphabetically by tag
+  _.sortBy _.values langauges, (language) -> language.tag
 
 
 Template.i18n_dropdown.events
