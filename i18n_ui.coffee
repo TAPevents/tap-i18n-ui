@@ -8,6 +8,9 @@ Template.i18n_dropdown.events
   'change .tap-i18n-dropdown' : (e) -> TAPi18n.setLanguage $(e.currentTarget).val()
 
 Template.i18n_dropdown.helpers
+  # only show if TAPi18n is enabled
+  'enabled' : -> TAPi18n.conf?
+
   # sorted language list with code and names
   'languages' : -> sortedLanguages()
 

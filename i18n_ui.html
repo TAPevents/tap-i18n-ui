@@ -1,7 +1,9 @@
 <template name="i18n_dropdown">
+  {{#if enabled}}
   <select class="form-control tap-i18n-dropdown">
     {{#each languages}}
       <option value="{{tag}}" selected={{isSelected}}>{{name}}</option>
     {{/each}}
   </select>
+  {{/if}}
 </template>
