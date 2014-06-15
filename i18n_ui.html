@@ -1,11 +1,24 @@
 <template name="i18n_dropdown">
   <div class="tap-i18n-dropdown">
-    {{#if enabled}}
+    {{#if i18n_enabled}}
       <select class="form-control">
-        {{#each languages}}
-          <option value="{{tag}}" selected={{isSelected}}>{{name}}</option>
+        {{#each i18n_sortedLanguages}}
+          <option value="{{tag}}" selected={{i18n_isCurrentLanguage tag}}>{{name}}</option>
         {{/each}}
       </select>
+    {{else}}
+      <div class="i18n-not-found">No i18n files found</div>
+    {{/if}}
+  </div>
+</template>
+
+
+<template name="i18n_buttons">
+  <div class="tap-i18n-buttons">
+    {{#if i18n_enabled}}
+      {{#each i18n_sortedLanguages}}
+        <button type="button" class="btn {{#if i18n_isCurrentLanguage tag}}btn-primary{{else}}btn-default{{/if}}">{{name}}</button>
+      {{/each}}
     {{else}}
       <div class="i18n-not-found">No i18n files found</div>
     {{/if}}
