@@ -1,19 +1,46 @@
 # tap-i18n-ui
 
-### User Interface for the [tap-i18n](https://github.com/TAPevents/tap-i18n) package
+## UI helpers for the [tap-i18n](https://github.com/TAPevents/tap-i18n) package
 
-To install:
+### Install
 
     $ mrt add tap-i18n-ui
 
-Currently, this package includes one template helper:
+### Additional Tempaltes
+
+To generates a series of [bootstrapped](http://getbootstrap.com/) select language buttons: 
+
+    {{> i18n_buttons}}
+
+To provides a dropdown `<select>` list of available languages:
 
     {{> i18n_dropdown}}
 
-It simply generates a dropdown list of available languages sorted by country code.
+Both templates sort the languages by country code.
+
+### Template Helpers
+
+If you want to implement your own UI, tap-i18n-ui facilitates this with handlebars helpers
+
+`i18n_currentLanguage` Returns and object with and localized `name`, language `tag`, and english translation `en`.
+
+    {{i18n_currentLanguage.name}} - {{i18n_currentLanguage.en}}
+    
+Including the above snippet in your template will yield something like `Français - (French)`
+
+tap-i18n-ui also provides some other handlebars helpers:
+
+    {{i18n_enabled}}                  // true if languages found
+    {{i18n_sortedLanguages}}          // array of available languages
+    {{i18n_isCurrentLanguage 'tag'}}  // true if given tag equals current language tag
+    
+
+---
 
 More UI planned, including country flags and bootstrap support.
 
+Thanks to [tap-i18n](https://github.com/TAPevents/tap-i18n) package
+
 MIT License 
 
-By [Chris Hitchcott](http://github.com/hitchcott),  2014
+Author [Chris Hitchcott](http://github.com/hitchcott),  June 2014
