@@ -3,6 +3,6 @@
   "description": "User interface for the tap-i18n package",
   "homepage": "https://github.com/TAPevents/tap-i18n-ui",
   "author": "Chris Hitchcott <hitchcott@gmail.com> for TAPevents",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "git": "https://github.com/TAPevents/tap-i18n-ui.git"
 }

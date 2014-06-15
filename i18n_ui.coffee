@@ -10,7 +10,7 @@ sortedLanguages = ->
 
 Template.i18n_dropdown.events
   # set language to selected option's tag
-  'change .tap-i18n-dropdown' : (e) -> TAPi18n.setLanguage $(e.currentTarget).val()
+  'change .tap-i18n-dropdown select' : (e) -> TAPi18n.setLanguage $(e.currentTarget).val()
 
 Template.i18n_dropdown.helpers
   # only show if TAPi18n is enabled

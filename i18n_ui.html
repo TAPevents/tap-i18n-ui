@@ -1,9 +1,13 @@
 <template name="i18n_dropdown">
-  {{#if enabled}}
-  <select class="form-control tap-i18n-dropdown">
-    {{#each languages}}
-      <option value="{{tag}}" selected={{isSelected}}>{{name}}</option>
-    {{/each}}
-  </select>
-  {{/if}}
+  <div class="tap-i18n-dropdown">
+    {{#if enabled}}
+      <select class="form-control">
+        {{#each languages}}
+          <option value="{{tag}}" selected={{isSelected}}>{{name}}</option>
+        {{/each}}
+      </select>
+    {{else}}
+      <div class="i18n-not-found">No i18n files found</div>
+    {{/if}}
+  </div>
 </template>
