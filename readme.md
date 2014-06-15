@@ -8,21 +8,21 @@
 
 ### Additional Templates
 
-To generates a series of [bootstrapped](http://getbootstrap.com/) select language buttons: 
+To generate a series of [bootstrapped](http://getbootstrap.com/) select language buttons: 
 
     {{> i18n_buttons}}
 
-To provides a dropdown `<select>` list of available languages:
+To provide a dropdown `<select>` list of available languages:
 
     {{> i18n_dropdown}}
 
-Both templates sort the languages by country code.
+Both templates sort languages list by country code.
 
 ### Template Helpers
 
 If you want to implement your own UI, tap-i18n-ui facilitates this with handlebars helpers
 
-`i18n_currentLanguage` Returns and object with and localized `name`, language `tag`, and english translation `en`.
+`i18n_currentLanguage` Returns an object with and localized `name`, language `tag`, and english translation `en`.
 
     {{i18n_currentLanguage.name}} - {{i18n_currentLanguage.en}}
     
@@ -37,7 +37,7 @@ tap-i18n-ui also provides some other handlebars helpers:
 
 ---
 
-More UI planned, including country flags and bootstrap support.
+More UI planned including flag-picker.
 
 Thanks to [tap-i18n](https://github.com/TAPevents/tap-i18n) package
 
