@@ -6,7 +6,7 @@
 
     $ mrt add tap-i18n-ui
 
-### Additional Tempaltes
+### Additional Templates
 
 To generates a series of [bootstrapped](http://getbootstrap.com/) select language buttons: 
 
