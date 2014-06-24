@@ -33,7 +33,8 @@ tap-i18n-ui also provides some other handlebars helpers:
     {{i18n_enabled}}                  // true if languages found
     {{i18n_sortedLanguages}}          // array of available languages
     {{i18n_isCurrentLanguage 'tag'}}  // true if given tag equals current language tag
-    
+
+tap-i18n-ui uses localStorage to save your language choice accross refreshes. You can use `TAPi18n.setLanguageAmplify` to do this yourself.
 
 ---
 
