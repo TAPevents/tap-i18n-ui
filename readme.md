@@ -4,7 +4,7 @@
 
 ### Install
 
-    $ mrt add tap-i18n-ui
+    $ meteor add tap:i18n-ui
 
 ### Additional Templates
 
