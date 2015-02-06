@@ -1,0 +1,30 @@
+<template name="i18n_dropdown_semantic">
+  <span class="tap-i18n-dropdown">
+    {{#if i18n_enabled}}
+    <div class="ui form">
+      <div class="field">
+        <select class="ui floating compact dropdown search">
+          {{#each i18n_sortedLanguages}}
+            <option value="{{tag}}" selected={{i18n_isCurrentLanguage tag}}>{{name}}</option>
+          {{/each}}
+        </select>
+      </div>
+    </div>
+    {{else}}
+      <span class="i18n-not-found">No i18n files found</span>
+    {{/if}}
+  </span>
+</template>
+
+
+<template name="i18n_buttons_semantic">
+  <span class="tap-i18n-buttons">
+    {{#if i18n_enabled}}
+      {{#each i18n_sortedLanguages}}
+        <button type="button" class="mini ui {{#if i18n_isCurrentLanguage tag}}primary{{/if}} button">{{name}}</button>
+      {{/each}}
+    {{else}}
+      <span class="i18n-not-found">No i18n files found</span>
+    {{/if}}
+  </span>
+</template>
