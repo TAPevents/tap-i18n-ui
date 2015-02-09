@@ -1,7 +1,7 @@
 Package.describe({
   name: 'tap:i18n-ui',
   summary: 'User interface for the tap-i18n package',
-  version: '0.4.2',
+  version: '0.5.0',
   git: 'https://github.com/TAPevents/tap-i18n-ui'
 });
 
@@ -13,10 +13,11 @@ Package.onUse(function (api) {
   api.use(['coffeescript','underscore','templating','amplify'], 'client');
 
   api.add_files([
-    'i18n_ui_semantic.html',
-    'i18n_ui_semantic.coffee',
-    'i18n_ui.html',
-    'i18n_ui.coffee',
-    'i18n_amplify.coffee'
+    'i18n_ui_amplify.coffee',
+    'i18n_ui_client_helpers.coffee',
+    'frameworks/i18n_ui_bootstrap.html',
+    'frameworks/i18n_ui_bootstrap.coffee',
+    'frameworks/i18n_ui_semantic.html',
+    'frameworks/i18n_ui_semantic.coffee'
   ], 'client');
 });

@@ -47,4 +47,7 @@ Thanks to [tap-i18n](https://github.com/TAPevents/tap-i18n) package
 
 MIT License
 
-Author [Chris Hitchcott](http://github.com/hitchcott),  June 2014
+### Contributors
+
+* Author: [Chris Hitchcott](http://github.com/hitchcott), June 2014
+* Semantic-UI: [Robin Carter](https://github.com/rcarter), January 2015
