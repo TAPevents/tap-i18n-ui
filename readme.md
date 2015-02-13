@@ -16,7 +16,7 @@ To generate a series of select language buttons for [Bootstrap](http://getbootst
 To provide a dropdown `<select>` list of available languages:
 
     {{> i18n_dropdown}}             // Bootstrap
-    {{> i18n_buttons_semantic}}     // Semantic UI
+    {{> i18n_dropdown_semantic}}    // Semantic UI
 
 
 Both templates sort languages list by country code.
