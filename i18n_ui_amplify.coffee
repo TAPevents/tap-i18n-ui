@@ -9,4 +9,4 @@ Meteor.startup ->
   if storedLanguage
     TAPi18n.setLanguage storedLanguage
   else
-    TAPi18n.setLanguageAmplify TAPi18n.conf.supported_languages[0]
+    TAPi18n.setLanguageAmplify _.keys(TAPi18n.getLanguages())[0]
