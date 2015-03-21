@@ -1,7 +1,7 @@
 Package.describe({
   name: 'tap:i18n-ui',
   summary: 'User interface for the tap-i18n package',
-  version: '0.5.0',
+  version: '0.6.0',
   git: 'https://github.com/TAPevents/tap-i18n-ui'
 });
 
