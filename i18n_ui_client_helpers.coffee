@@ -18,3 +18,6 @@ UI.registerHelper 'i18n_currentLanguage' , ->
   currentLanguage = TAPi18n.getLanguages()?[TAPi18n.getLanguage()]
   currentLanguage.tag = TAPi18n.getLanguage()
   return currentLanguage
+
+# add language change event, to be redefined in project if needed
+TAPi18n.afterUILanguageChange = -> null
