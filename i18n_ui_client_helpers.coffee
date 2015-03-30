@@ -20,4 +20,4 @@ UI.registerHelper 'i18n_currentLanguage' , ->
   return currentLanguage
 
 # add language change event, to be redefined in project if needed
-TAPi18n.afterUILanguageChange = -> null
+TAPi18n._afterUILanguageChange = -> null

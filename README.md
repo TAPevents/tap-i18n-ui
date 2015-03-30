@@ -41,7 +41,7 @@ tap-i18n-ui uses localStorage to save your language choice accross refreshes. Yo
 
 ### Events
 
-You can define a `TAPi18n.afterUILanguageChange` function within your project to be called each time the language is changed using a tap-i18n-ui template.
+You can define a `TAPi18n._afterUILanguageChange` function within your project to be called each time the language is changed using a tap-i18n-ui template.
 
 ---
 
