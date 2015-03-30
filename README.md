@@ -39,6 +39,10 @@ tap-i18n-ui also provides some other handlebars helpers:
 
 tap-i18n-ui uses localStorage to save your language choice accross refreshes. You can use `TAPi18n.setLanguageAmplify` to do this yourself.
 
+### Events
+
+You can define a `TAPi18n._afterUILanguageChange` function within your project to be called each time the language is changed using a tap-i18n-ui template.
+
 ---
 
 More UI planned including flag-picker.
